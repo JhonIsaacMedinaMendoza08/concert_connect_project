@@ -2,6 +2,308 @@
 
 *{
   margin: 0;
-  padding: 0;
+  padding: 0px;
   box-sizing: border-box; 
+  /* background: #fbfcfd; */
+}
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/*------------------HEADER------------------*/
+header {
+  /* background: var(--lorem-container); */
+  width: 100%;
+  height: 296px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 45px;
+  padding-left: 21px;
+  padding-right: 21px;
+  gap: 20px;
+}
+.headerTop {
+  display: flex;
+  justify-content: space-between;
+}
+.headerText {
+
+
+}
+.headerText h1{
+  font-family: "inter-SemiBold";
+  font-size: 30px;
+  color: var(--color-1);
+}
+.headerText span {
+  color: var(--color-2);
+}
+.navLinks {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  border-radius: 10px;
+  padding-top: 1px;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.233);
+  background-color: var(--color-7);
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.navLinks img {
+  width: 17px;
+  height: 17px;
+}
+.navLinks input {
+  width: 100%;
+  height: 41px;
+  color: var(--color-1);
+  outline: none;
+  padding-inline: 5px;
+  font-family: "inter-Regular";
+  font-size: 13px;
+  border: none;
+  color: var(--color-1);
+}
+
+/*---------------------Area*/
+.nav__TypesOfEvents {
+  width: 100%;
+  height: 28px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  overflow-x: auto; /* Cambiado de scroll a auto para ocultar cuando no sea necesario */
+  gap: 12px;
+  white-space: nowrap; /* Evita saltos de línea */
+  font-family: "inter-Regular";
+  font-size: 12px;
+  
+}
+.nav__TypesOfEvents__item {
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 6.5px 14.5px; */
+}
+.music_Concert {
+  background-color: var(--color-3);
+  padding: 6.5px 14.5px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--color-1);
+}
+.exhibition {
+  background-color: var(--color-4);
+  padding: 6.5px 14.5px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--color-1);
+}
+.standUpShow {
+  background-color: var(--color-5);
+  padding: 6.5px 14.5px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--color-1);
+}
+.theater {
+  background-color: var(--color-6);
+  padding: 6.5px 14.5px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--color-1);
+}
+
+/*---------------------------- Main-------------------------*/
+main {
+  /* background: var(--lorem-container);  */
+  width: 100%;
+  height: 219px;
+  padding-left: 21px;
+  padding-right: 21px;
+
+}
+.top__main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 16px;
+}
+.top__main h2{
+  font-family: "inter-SemiBold";
+  font-size: 14px;
+  color: var(--color-1);
+}
+.top__main a{
+  font-family: "inter-Regular";
+  font-size: 12px;
+  color: var(--color-8);
+  text-decoration: none;
+}
+
+/* Contenedor principal */
+.section__TrendingEvents {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+  position: relative;
+
+}
+.div__TrendingEvents-scroll {
+  display: flex; /* Alinea los elementos de forma horizontal */
+  flex-direction: row;
+  gap: 15px;
+  overflow-x: auto; /* Activa scroll horizontal */
+  overflow-y: hidden; /* Previene scroll vertical */
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+}
+.container__trendingEvents {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  position: relative; /* Para posicionar el texto sobre la imagen */
+
+}
+.container__trendingEvents img{
+  position: relative;
+}
+.containerText__Events {
+  background: rgba(45, 38, 75, 0.5);
+  backdrop-filter: blur(5px);
+  width: 332px;
+  height: 90px;
+  /* margin-top: -70px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+  position: absolute;
+  top:90px;
+  left: 7px;
+}
+.card__eventColdPlay__textLeft {
+  /* background: rgb(0, 255, 17); */
+  width: 184px;
+  display: flex;
+  flex-direction: column;
+  gap: 7.5px;
+}
+.card__eventColdPlay__textLeft h3{
+  font-family: "inter-SemiBold";
+  font-size: 12px;
+  color: var(--color-7);
+}
+.card__eventColdPlay__textLeft p{
+  font-family: "inter-Regular";
+  font-size: 12px;
+  color: var(--color-7);
+
+}
+.card__eventColdPlay__textRight {
+  /* background: rgb(0, 76, 255); */
+  width: 102px;
+}
+.card__eventColdPlay__textRight h4{
+  font-family: "inter-SemiBold";
+  font-size: 16px;
+  color: var(--color-7);
+}
+.card__eventColdPlay__textRight span{
+  font-family: "inter-Regular";
+  font-size: 10px;
+  color: var(--color-7);
+}
+
+/*---------------------------------Events Near You ------------------*/
+.top__eventsNearYou-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+.top__eventsNearYou-text h3{
+  font-family: "inter-SemiBold";
+  font-size: 14px;
+  color: var(--color-1);
+}
+
+.top__eventsNearYou-text a{
+  font-family: "inter-Regular";
+  font-size: 12px;
+  color: var(--color-8);
+  text-decoration: none;
+}
+.section__eventsNearYou {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.eventsNearYou__containers {
+  width: 166px;
+  height: 203px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  text-decoration: none;
+  overflow-x: auto; /* Activa scroll horizontal */
+  overflow-y: hidden; /* Previene scroll vertical */
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+
+}
+.div_eventsNearYou {
+  /* background: rgb(157, 255, 0); */
+  width: 166px;
+  height: 203px;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.233);
+  text-decoration: none;
+}
+.div_eventsNearYou img{
+  
+
+}
+.container__images {
+  width: 150px;
+  height: 102px;
+  border-radius: 8px;
+}
+.smallIMG {
+  width: 9px;
+  height: 11px;
+}
+.div_eventsNearYou h3{
+  font-family: "inter-SemiBold";
+  font-size: 10px;
+  color: var(--color-1);
+  margin-top: 9px;
+}
+.div_eventsNearYou span{
+  font-family: "inter-Regular";
+  font-size: 10px;
+  color: var(--color-1);
+  margin-top: 8px;
+
+}
+.div_eventsNearYou p{
+  font-family: "inter-SemiBold";
+  font-size: 12px;
+  color: var(--color-9);
+  margin-top: 9px;
 }
