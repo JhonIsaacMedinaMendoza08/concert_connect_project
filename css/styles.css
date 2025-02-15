@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0px;
   box-sizing: border-box; 
-  background: #fbfcfd;
+  /* background: #fbfcfd; */
 }
 
 
@@ -42,7 +42,7 @@ header {
   align-items: center;
   border-radius: 10px;
   padding-top: 1px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.233);
   background-color: var(--color-7);
   padding-left: 12px;
   padding-right: 12px;
@@ -111,4 +111,94 @@ header {
   border-radius: 8px;
   text-decoration: none;
   color: var(--color-1);
+}
+
+/*---------------------------- Main-------------------------*/
+main {
+  /* background: var(--lorem-container);  */
+  width: 100%;
+  height: 219px;
+  padding-top: 30px;
+  padding-left: 21px;
+  padding-right: 21px;
+}
+
+/* Contenedor principal */
+.section__TrendingEvents {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+  position: relative;
+
+}
+/* Contenedor que maneja el scroll horizontal */
+.div__TrendingEvents-scroll {
+  display: flex; /* Alinea los elementos de forma horizontal */
+  flex-direction: row;
+  gap: 15px;
+  overflow-x: auto; /* Activa scroll horizontal */
+  overflow-y: hidden; /* Previene scroll vertical */
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+}
+.container__trendingEvents {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  position: relative; /* Para posicionar el texto sobre la imagen */
+
+}
+.container__trendingEvents img{
+  position: relative;
+}
+.containerText__firstEvent {
+  background: rgba(45, 38, 75, 0.5);
+  backdrop-filter: blur(5px);
+  width: 332px;
+  height: 90px;
+  /* margin-top: -70px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+  position: absolute;
+  top:90px;
+  left: 7px;
+}
+.first__eventColdPlay__textLeft {
+  /* background: rgb(0, 255, 17); */
+  width: 184px;
+  display: flex;
+  flex-direction: column;
+  gap: 7.5px;
+}
+.first__eventColdPlay__textLeft h3{
+  font-family: "inter-SemiBold";
+  font-size: 12px;
+  color: var(--color-7);
+}
+.first__eventColdPlay__textLeft p{
+  font-family: "inter-Regular";
+  font-size: 12px;
+  color: var(--color-7);
+
+}
+.first__eventColdPlay__textRight {
+  /* background: rgb(0, 76, 255); */
+  width: 102px;
+}
+.first__eventColdPlay__textRight h4{
+  font-family: "inter-SemiBold";
+  font-size: 16px;
+  color: var(--color-7);
+}
+.first__eventColdPlay__textRight span{
+  font-family: "inter-Regular";
+  font-size: 10px;
+  color: var(--color-7);
 }
