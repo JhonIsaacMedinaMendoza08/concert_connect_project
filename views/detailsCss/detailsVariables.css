@@ -1,9 +1,24 @@
 :root{
-    --color-1: #ffffff;
-    --color-2: #ffffff20;
+    --lorem-container: #ae1b1b48;
+
+    --color-1: #000000;
+    --color-2: #761CBC;
+    --color-3: #EDE9FF;
+    --color-4: #FFF5D7;
+    --color-5: #FFECEC;
+    --color-6: #E4FFEA;
+    --color-7: #FFffff;
+    --color-8: #333333;
+    --color-9: #EC441E;
+    --color-10: #ffffff2d;
+
 }
 
 @font-face {
-font-family: "example";
-src: url(../storage/font/example.ttf);
+    font-family: "inter-SemiBold";
+    src: url(/views/storageDetails/detailsFonts/inter/Inter_18pt-SemiBold.ttf);
 }
+@font-face {
+    font-family: "inter-Regular";
+    src: url(/views/storageDetails/detailsFonts/inter/Inter_24pt-Regular.ttf);
+    }
