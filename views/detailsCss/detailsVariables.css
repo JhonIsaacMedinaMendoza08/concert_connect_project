@@ -11,6 +11,9 @@
     --color-8: #333333;
     --color-9: #EC441E;
     --color-10: #ffffff2d;
+    --color-11: #706D6D;
+    --color-12: #0092FC;
+
 
 }
 
@@ -22,3 +25,11 @@
     font-family: "inter-Regular";
     src: url(/views/storageDetails/detailsFonts/inter/Inter_24pt-Regular.ttf);
     }
+@font-face {
+    font-family: "inter-Medium";
+    src: url(/views/storageDetails/detailsFonts/inter/Inter_24pt-Medium.ttf);
+    }
+@font-face {
+    font-family: "DMSans-Regular";
+    src: url(/views/storageDetails/detailsFonts/DM_Sans/DMSans-Regular.ttf);
+        }

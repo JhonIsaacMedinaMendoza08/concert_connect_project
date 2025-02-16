@@ -12,9 +12,9 @@
 }
 .principal_imageArea {
 }
-.principal_imageArea :last-child(2){
+.mainImage {   
     width: 100vw;  /* Hace que la imagen ocupe todo el ancho de la pantalla */
-    height: 316px;  /* Mantiene la proporción */
+    height: auto;  /* Mantiene la proporción */
     object-fit: cover; /* Asegura que se vea bien en diferentes resoluciones */
     display: block;
 }
@@ -70,4 +70,36 @@
 .container__Participants img{
 }
 .container__Participants p{
+    font-family: "inter-Medium";
+    font-size: 12px;
+
+}
+
+.section__descriptionArea {
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+
+}
+.container__descriptionText {
+    width: 345px;
+    height: 108px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+}
+.container__descriptionText h4{
+    font-family: "inter-Medium";
+    font-size: 14px;
+    color: var(--color-1);
+}
+.container__descriptionText p{
+    font-family: "DMSans-Regular";
+    font-size: 12px;
+    color: var(--color-11);
+    line-height: 18px;
+}
+.container__descriptionText span{
+    color: var(--color-12);
 }
