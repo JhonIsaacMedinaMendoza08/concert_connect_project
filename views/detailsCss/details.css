@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box; 
 }
-
+/*----------------------parte superior */
 .topSection__Area {
     display: flex;
     flex-direction: column;
@@ -74,7 +74,7 @@
     font-size: 12px;
 
 }
-
+/*------------------- Description Area--------------------*/
 .section__descriptionArea {
     display: flex;
     justify-content: center;
@@ -102,4 +102,25 @@
 }
 .container__descriptionText span{
     color: var(--color-12);
+}
+/*------------------------- Mapa del lugar --------------------*/
+.location_divText h4{
+    font-family: "inter-SemiBold";
+    font-size: 14px;
+    color: var(--color-1);
+    padding-top: 20px;
+}
+.map__stadium {
+    width: 346px;
+    height: 212px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.venueLocation__container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+iframe {
+    border-radius: 10px;
 }
