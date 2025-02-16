@@ -1,8 +1,23 @@
 :root{
-    --color-1: #ffffff;
+    --lorem-container: #ae1b1b48;
+
+    --color-1: #000000;
+    --color-2: #5F5A5A;
+    --color-3: #ffffff;
+    --color-4: #ffffff30;
 }
 
 @font-face {
-font-family: "example";
-src: url(../storage/font/example.ttf);
+    font-family: "inter-SemiBold";
+    src: url("../storageTicket/fontTicket/inter/Inter_18pt-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "inter-Regular";
+    src: url("../storageTicket/fontTicket/inter/Inter_18pt-Regular.ttf");
+}
+
+@font-face {
+    font-family: "inter-Medium";
+    src: url("../storageTicket/fontTicket/inter/Inter_18pt-Medium.ttf");
 }

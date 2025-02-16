@@ -19,17 +19,17 @@
 
 @font-face {
     font-family: "inter-SemiBold";
-    src: url(/views/storageDetails/detailsFonts/inter/Inter_18pt-SemiBold.ttf);
+    src: url("../storageDetails/detailsFonts/inter/Inter_18pt-SemiBold.ttf");
 }
 @font-face {
     font-family: "inter-Regular";
-    src: url(/views/storageDetails/detailsFonts/inter/Inter_24pt-Regular.ttf);
-    }
+    src: url("../storageDetails/detailsFonts/inter/Inter_24pt-Regular.ttf");
+}
 @font-face {
     font-family: "inter-Medium";
-    src: url(/views/storageDetails/detailsFonts/inter/Inter_24pt-Medium.ttf);
-    }
+    src: url("../storageDetails/detailsFonts/inter/Inter_24pt-Medium.ttf");
+}
 @font-face {
     font-family: "DMSans-Regular";
-    src: url(/views/storageDetails/detailsFonts/DM_Sans/DMSans-Regular.ttf);
-        }
+    src: url("../storageDetails/detailsFonts/DM_Sans/DMSans-Regular.ttf");
+}            

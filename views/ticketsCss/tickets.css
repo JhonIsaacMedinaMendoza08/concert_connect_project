@@ -1,6 +1,140 @@
-@import url(../views/ticketsCss/ticketsVariables.css);
+@import url(ticketsVariables.css);
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
+}
+body{
+    
+}
+main{
+    background: linear-gradient(157deg, #91B5FD 0%, #F0DDFF 100%);
+    width: 100%;
+    height: 115vh;
+
+}
+/*----------------------- Area superior de botones --------------------------*/
+.buttomTop__tickets {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 25px;
+}
+.buttomTop__tickets a{
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    z-index: +1;
+    background: var(--color-4);
+    backdrop-filter: blur(1px);
+}
+
+/*-------------------------Area inicial con imagen y texto corto--------------*/
+.section__tickets {
+    display: flex;
+    flex-direction: row;
+    margin-top: 11px;
+    margin-left: 22px;
+    align-items: flex-end;
+    overflow-x: auto; 
+    gap: 16px;
+}
+.container__ticket {
+    width: 343px;
+    height: 596px;
+    background: white;
+    border-radius: 20px;
+}
+.topArea__ticket {
+    padding: 17px;
+}
+.topArea__ticket img{
+    margin-bottom: 16px;
+    width: 308px;
+    height: 159px;
+}
+.topArea__ticket h2{
+    font-family: "inter-SemiBold";
+    font-size: 18px;
+    color: var(--color-1);
+    margin-bottom: 8px;
+
+}
+.topArea__ticket p{
+    font-family: "inter-Regular";
+    font-size: 12px;
+    color: var(--color-2);
+
+}
+/*-------------------Area de informacion del ticket ----------------*/
+
+.ticketDetails__Container {
+    width: 282px;
+    height: 156px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-left: 18px;
+    margin-top: 20px;
+
+}
+.ticketTexts__Container {
+    display: grid;
+    grid-template-columns: 185px 100px;
+    /* background: red; */
+}
+.textAreaLeft{
+}
+.textAreaLeft span{
+    font-family: "inter-Medium";
+    font-size: 12px;
+    color: var(--color-2);
+}
+.textAreaLeft h4{
+    font-family: "inter-SemiBold";
+    font-size: 14px;
+    color: var(--color-1);
+}
+.textAreaRight{
+}
+.textAreaRight span{
+    font-family: "inter-Medium";
+    font-size: 12px;
+    color: var(--color-2);
+}
+.textAreaRight h4{
+    font-family: "inter-SemiBold";
+    font-size: 14px;
+    color: var(--color-1);
+}
+
+/*----------------------Area del corte del ticket-------------------*/
+
+.cupTicket__bottom{
+    margin-top: 11px;
+}
+.cupTicket__bottom img{
+    width: 345.5px;
+    height: 35px;
+    margin-left: -1px;
+}
+/*------------------------Bar Code Area----------------------------*/
+.barCodeArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+
+}
+.barCodeArea img{
+    width: 270px;
+    height: 64px;
+    
+}
+.barCodeArea span{
+    font-family: "inter-Regular";
+    font-size: 12px;
+    color: var(--color-1); 
 }
