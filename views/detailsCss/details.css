@@ -4,3 +4,39 @@
     padding: 0;
     box-sizing: border-box; 
 }
+
+.topSection__Area {
+}
+.principal_imageArea {
+}
+.principal_imageArea img{
+}
+.principal_imageArea a{
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    position: absolute;
+    top: 35px;
+    left: 24px;
+    z-index: +1;
+    background: var(--color-2);
+    backdrop-filter: blur(1px);
+}
+.principalImage__containerText {
+    width: 346px;
+    height: 140px;
+    background: red;
+}
+.principalImage__containerText h3{
+}
+.principalImage__containerText p{
+}
+.container__Participants {
+}
+.container__Participants img{
+}
+.container__Participants p{
+}
