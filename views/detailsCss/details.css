@@ -4,3 +4,165 @@
     padding: 0;
     box-sizing: border-box; 
 }
+/*----------------------parte superior */
+.topSection__Area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.principal_imageArea {
+}
+.mainImage {   
+    width: 100vw;  /* Hace que la imagen ocupe todo el ancho de la pantalla */
+    height: auto;  /* Mantiene la proporción */
+    object-fit: cover; /* Asegura que se vea bien en diferentes resoluciones */
+    display: block;
+}
+.principal_imageArea a{
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    position: absolute;
+    top: 35px;
+    left: 24px;
+    z-index: +1;
+    background: var(--color-10);
+    backdrop-filter: blur(1px);
+}
+.principalImage__containerText {
+    width: 346px;
+    height: 140px;
+    background: var(--color-7);
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.233);
+    padding: 12px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 14px;
+    margin-top: -80px;
+}
+.principalImage__containerText h3{
+    font-family: "inter-SemiBold";
+    font-size: 14px;
+    color: var(--color-1);
+}
+.principalImage__containerText span{
+    font-family: "inter-SemiBold";
+    font-size: 14px;
+    color: var(--color-2);
+}
+.principalImage__containerText p{
+    font-family: "inter-Regular";
+    font-size: 13px;
+    color: var(--color-1);
+    margin-top: 6px;
+}
+.container__Participants {
+    margin-top: 16px;
+    display: flex;
+    gap: 8px;
+}
+.container__Participants img{
+}
+.container__Participants p{
+    font-family: "inter-Medium";
+    font-size: 12px;
+}
+/*------------------- Description Area--------------------*/
+.section__descriptionArea {
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+}
+.container__descriptionText {
+    width: 345px;
+    height: 108px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.container__descriptionText h4{
+    font-family: "inter-Medium";
+    font-size: 14px;
+    color: var(--color-1);
+}
+.container__descriptionText p{
+    font-family: "DMSans-Regular";
+    font-size: 12px;
+    color: var(--color-11);
+    line-height: 18px;
+}
+.container__descriptionText span{
+    color: var(--color-12);
+}
+/*------------------------- Mapa del lugar --------------------*/
+.location_divText h4{
+    font-family: "inter-SemiBold";
+    font-size: 14px;
+    color: var(--color-1);
+    padding-top: 20px;
+}
+.map__stadium {
+    width: 346px;
+    height: 270px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.venueLocation__container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+iframe {
+    border-radius: 10px;
+}
+/*------------------------------ Footer ---------------------*/
+footer{
+    width: 100%;
+    height: 56px;
+    background: var(--color-7);
+    display: flex;
+    position: sticky;
+    bottom: 0;
+    padding: 0 22px;
+}
+.footerArea {
+    display: flex;
+    align-items: center;
+}
+.textLeft {
+}
+.textLeft p{
+    font-family: "inter-Regular";
+    font-size: 10px;
+    color: var(--color-1);
+}
+.textLeft h3{
+    font-family: "inter-SemiBold";
+    font-size: 16px;
+    color: var(--color-1);
+
+}
+.buy__ticket {
+    position: absolute;
+    right: 22px;
+}
+.buy__ticket a{
+    width: 110px;
+    height: 34px;
+    font-size: 14px;
+    background-color: var(--color-2);
+    color: var(--color-7);
+    font-family: "inter-Medium";
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
