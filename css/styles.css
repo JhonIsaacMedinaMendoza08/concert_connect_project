@@ -1,4 +1,4 @@
-@import url(../css/variables.css);
+@import url(variables.css);
 
 *{
   margin: 0;
@@ -259,10 +259,10 @@ main {
 }
 
 .eventsNearYou__containers {
-  height: 203px;
+  height: 223px;
   display: grid;
+  place-items: center; 
   grid-template-columns: repeat(2, 1fr); /* 2 eventos por fila */
-  gap: 16px;
   gap: 16px;
   text-decoration: none;
   overflow-y: auto; /* Activa scroll horizontal */
@@ -279,7 +279,9 @@ main {
   height: 203px;
   padding: 8px;
   border-radius: 8px;
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.233);
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.07);
+  margin-left: -2px;
+  margin-right:2px;
   text-decoration: none;
 }
 .div_eventsNearYou img{
@@ -296,7 +298,9 @@ main {
   height: 11px;
 }
 .div_eventsNearYou h3{
+  width: 166px;
   font-family: "inter-SemiBold";
+
   font-size: 10px;
   color: var(--color-1);
   margin-top: 9px;

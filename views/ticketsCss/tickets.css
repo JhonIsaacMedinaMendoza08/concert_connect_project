@@ -1,4 +1,4 @@
-@import url(/views/ticketsCss/ticketsVariables.css);
+@import url(ticketsVariables.css);
 *{
     margin: 0;
     padding: 0;
@@ -38,9 +38,8 @@ main{
     margin-top: 11px;
     margin-left: 22px;
     align-items: flex-end;
-    overflow-x: auto; /* Cambiado de scroll a auto para ocultar cuando no sea necesario */
+    overflow-x: auto; 
     gap: 16px;
-    white-space: nowrap; /* Evita saltos de línea */
 }
 .container__ticket {
     width: 343px;

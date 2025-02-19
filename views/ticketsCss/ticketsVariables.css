@@ -9,13 +9,15 @@
 
 @font-face {
     font-family: "inter-SemiBold";
-    src: url(/views/storageTicket/fontTicket/inter/Inter_18pt-SemiBold.ttf);
+    src: url("../storageTicket/fontTicket/inter/Inter_18pt-SemiBold.ttf");
 }
+
 @font-face {
     font-family: "inter-Regular";
-    src: url(/views/storageTicket/fontTicket/inter/Inter_18pt-Regular.ttf);
-    }
+    src: url("../storageTicket/fontTicket/inter/Inter_18pt-Regular.ttf");
+}
+
 @font-face {
     font-family: "inter-Medium";
-    src: url(/views/storageTicket/fontTicket/inter/Inter_18pt-Medium.ttf);
-    }
+    src: url("../storageTicket/fontTicket/inter/Inter_18pt-Medium.ttf");
+}
